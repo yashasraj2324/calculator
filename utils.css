@@ -1,0 +1,25 @@
+.center{
+    text-align: center;
+}
+.bg-red{
+    background: red;
+}.mx-auto{
+    margin: auto;
+}
+.flex{
+    display:flex
+
+}
+.felxcoll{
+    flex-direction: column;
+}
+.items-center{
+    align-items: center;
+}
+#calc{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: sticky;
+
+}

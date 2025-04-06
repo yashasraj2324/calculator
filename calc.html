@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cluculatortome</title>
+    <link rel="stylesheet" href="calc.css" type="text/css" />
+    <link rel="stylesheet" href="utils.css" type="text/css" />
+</head>
+<body>
+    <h1 class="center">Calculator using HTML</h1>
+    <div id="calc">
+    <div class="Calc">
+    <div class="cntainer flex felxcoll items-center  mx-auto mw20">
+        <div class="row">
+            <input type="text" class="input" placeholder="0" id="display" readonly/>
+        </div>
+        <div class="row ">
+            <button class="button blue" onclick="clearDisplay()">C</button>
+            <button class="button blue" onclick="toggleSign()">&PlusMinus;</button>
+            <button class="button blue" onclick="backspace()">&lAarr;</button>
+            <button class="button blue" onclick="appendOperator('/')">&divide;</button>
+            
+        </div>
+       
+        <div class="row">
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button blue" onclick="appendOperator('*')">X</button>
+            
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button blue " onclick="appendOperator('-')">_</button>
+            
+        </div>
+         <div class="row">
+            <button class="button"  onclick="appendNumber('3')">3</button>
+            <button class="button"  onclick="appendNumber('2')">2</button>
+            <button class="button"  onclick="appendNumber('1')">1</button>
+            <button class="button blue"  onclick="appendOperator('+')">+</button>
+            
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="appendDecimal('.')">.</button>
+            <button class="button" onclick="calculate()">=</button>
+            <button class="button blue" onclick="appendPercentage()">%</button>
+    
+            
+        </div>
+    </div>
+    </div>
+    </div>
+ <script src="calc.js"></script>   
+</body>
+</html>
